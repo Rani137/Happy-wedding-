@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Wedding</title>
+  <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(#f7f7f7, #e0e0e0);
+      font-family: 'Glass Antiqua', cursive;
+      overflow: hidden;
+    }
+
+    .envelope {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 1000px;
+    }
+
+    .card {
+      width: 600px;
+      height: 500px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+      transform-style: preserve-3d;
+      transform: rotateX(-90deg);
+      animation: openEnvelope 2s forwards ease-in-out;
+      position: relative;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    @keyframes openEnvelope {
+      to {
+        transform: rotateX(0deg);
+      }
+    }
+
+    .arabic {
+      font-family: 'Scheherazade New', serif;
+      font-size: 24px;
+      direction: rtl;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 36px;
+      font-family: 'Georgia', serif;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .flowers {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      pointer-events: none;
+    }
+
+    .flowers img {
+      width: 150px;
+      height: auto;
+      margin: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 650px) {
+      .card {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+      }
+
+      .flowers img {
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="envelope">
+  <div class="card">
+    <div class="title">Happy Wedding</div>
+    <div class="content">
+      Untuk Mbak Rini tersayang,<br><br>
+
+      <div class="arabic">بارك الله لكما وبارك عليكما وجمع بينكما في خير</div>
+
+      Hari ini, takdir menuntun dua jiwa<br>
+      yang pernah berjalan sejajar dari kejauhan,<br>
+      kini disatukan dalam satu tujuan yang suci dan penuh harapan.<br><br>
+
+      Selamat menulis kisah baru, Mbak.<br>
+      Semoga cinta ini selalu terjaga—<br>
+      bukan hanya karena rasa,<br>
+      tapi karena Allah yang jadi poros utamanya.<br><br>
+
+      Semoga rumah tangga ini menjadi tempat pulang<br>
+      yang tak hanya tenang, tapi juga menguatkan.<br>
+      Tempat belajar mencintai dalam iman,<br>
+      dan bertumbuh bersama dalam kebaikan.<br><br>
+
+      Semoga setiap tawa di rumah barumu menjadi pahala,<br>
+      setiap air mata menjadi penghapus dosa,<br>
+      dan setiap doa yang kalian panjatkan<br>
+      membuka pintu-pintu langit yang penuh berkah dan cinta.<br><br>
+
+      Semoga setiap langkah dalam kebersamaan ini<br>
+      dilapangkan oleh Allah,<br>
+      dikuatkan dalam suka dan duka,<br>
+      dan dipenuhi oleh kasih yang mendekatkan kalian pada surga.<br><br>
+
+      Teruslah saling menggenggam dalam sabar,<br>
+      menguatkan dalam lelah,<br>
+      dan menjaga dalam doa,<br>
+      karena di situlah indahnya pernikahan yang diberkahi-Nya.<br><br>
+
+      With all my du’a and warmest wishes,<br>
+      Rani
+    </div>
+    <div class="flowers">
+      <img src="https://i.pinimg.com/originals/cf/87/65/cf87658947c58b9d2a6db8013d0e80a3.jpg" alt="Buket kiri">
+      <img src="https://i.pinimg.com/originals/b0/7e/6e/b07e6e45668a0417a45bbbc6e2f6ac4c.jpg" alt="Buket kanan">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
